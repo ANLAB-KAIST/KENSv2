@@ -1,0 +1,6 @@
+*
+!.gitignore
+!*_seth*
+!*.conf
+!*.sh
+!*.c
