@@ -11,8 +11,8 @@ all: testktcp
 clean:
 	rm -f testktcp *.o *.pcap *.report grade
 
-ktcp_reference.o: lib/ktcp_reference.c ../src/linked_list.h ../src/ktcp_easy_impl.h ../src/ktcp_easy_lib.h
-	$(CC) $(CFLAGS) -c -I ../src lib/ktcp_reference.c $(LIBS)
+#ktcp_reference.o: lib/ktcp_reference.c ../src/linked_list.h ../src/ktcp_easy_impl.h ../src/ktcp_easy_lib.h
+#	$(CC) $(CFLAGS) -c -I ../src lib/ktcp_reference.c $(LIBS)
 
 ktcp_test_lib.o: lib/ktcp_test_lib.c lib/ktcp_test_lib.h ../src/linked_list.h ../src/ktcp_easy_impl.h ../src/ktcp_easy_lib.h
 	$(CC) $(CFLAGS) -c -I ../src -I . -I lib lib/ktcp_test_lib.c $(LIBS)
